@@ -16,4 +16,17 @@ Logistic Regression model
     4. Scatter Plot: A scatter plot between two numeric columns study_hours_per_week and final_score is produced. The scatter plot shows a strong positive linear        relationship between study hours and final score and the points form an upward trend that means when study hours increase final scores also increase.             There is a strong correlation between these two numeric columns
     5. A box plot of a numeric column (final_score) split by a categorical column (passed) is produced. The The box plot shows that students who passed have             higher median final score and students who did not pass have lower scores
 8. Correlation heat map: Computed the correlation matrix of all numeric columns and visualized it with a heat map. Identified study_hours_per_week and final_score as the pair of variables with the highest absolute correlation. The highest correlation indicates the string relationship between study_hours_per_week and final_score. If the study hours is increased the final score is getting increased but other factors like attendance_rate and prior knowledge could also increase the final score
-9. 
+9. a. Imputation strategy comparison: For the two numeric columns with the highest absolute skewness identified in Task 5 (attendance_rate and final_score), we have computed both the column mean and the column median. Printed both values for each column. There are no null columns and no imputation is done. However if any null value is present we will impute with median values as positive skew will pull the mean upward and negative skew will pull the mean downward
+   b. Spearman rank correlation: Computed Spearman and Pearson rank correlation matrix for all numeric columns. Identified the three column pairs where the absolute difference between the Spearman correlation and the Pearson correlation is largest. Printed both matrices and a difference table showing |Spearman − Pearson| for each pair.
+      Three Pairs:
+      attendance_rate, final_score
+      a) Pearson ≥ Spearman, indicating an approximately linear relationship
+      b) Rely on Pearson correlation measure as it has linear relationship
+      age, final_score
+      a) Spearman > Pearson, indicating monotonic but non-linear relationship
+      b) Rely on Spearman correlation measure as it has non-linear relationship
+      final_score, study_hours_per_week
+      a) Spearman > Pearson, indicating monotonic but non-linear relationship
+      b) Though it indicates Spearman > Pearson and it has non-linear relationship we will rely on Pearson correlation measure because the difference between              Spearman and Pearson correlation measure is very less and there is a strong correlation between final_score and study_hours_per_week
+   
+   
