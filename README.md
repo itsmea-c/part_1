@@ -21,7 +21,7 @@ Logistic Regression model
       Three Pairs:
       attendance_rate, final_score
       a) Pearson ≥ Spearman, indicating an approximately linear relationship
-      b) Rely on Pearson correlation measure as it has linear relationship
+      b) Rely on Pearson correlation measure as it has an approximate linear relationship
       age, final_score
       a) Spearman > Pearson, indicating monotonic but non-linear relationship
       b) Rely on Spearman correlation measure as it has non-linear relationship
