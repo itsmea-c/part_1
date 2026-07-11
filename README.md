@@ -11,6 +11,9 @@ Logistic Regression model
 6. Outlier detection with IQR: Computed Q1, Q3, IQR, lower bound and upper bound for two numeric columns previous_score and final_score. Counted the number of rows that fall outside these bounds and there are no outliers found
 7. Visualizations:
     1. Line Plot: A line plot of a numerical variable Final Score sorted by row index is produced
-    2. Bar Chart: A bar chart comparing the mean of one numeric column (Final Score) across categories of one categorical column (Passed) is produced
-    3. Histogram: A histogram of the most skewed numeric column (attendance_rate) is produced. The distribution is slightly right skewed so it is positive skew            which means few students have high attendance rate
-    4. Scatter Plot: A scatter plot between two numeric columns study_hours_per_week and final_score is produced
+    2. Bar Chart: A bar chart comparing the mean of one numeric column (final_score) across categories of one categorical column (passed) is produced
+    3. Histogram: A histogram of the most skewed numeric column (attendance_rate) is produced. The distribution is slightly right skewed so it is positive skew          which means few students have high attendance rate
+    4. Scatter Plot: A scatter plot between two numeric columns study_hours_per_week and final_score is produced. The scatter plot shows a strong positive linear        relationship between study hours and final score and the points form an upward trend that means when study hours increase final scores also increase.             There is a strong correlation between these two numeric columns
+    5. A box plot of a numeric column (final_score) split by a categorical column (passed) is produced. The The box plot shows that students who passed have             higher median final score and students who did not pass have lower scores
+8. Correlation heat map: Computed the correlation matrix of all numeric columns and visualized it with a heat map. Identified study_hours_per_week and final_score as the pair of variables with the highest absolute correlation. The highest correlation indicates the string relationship between study_hours_per_week and final_score. If the study hours is increased the final score is getting increased but other factors like attendance_rate and prior knowledge could also increase the final score
+9. 
