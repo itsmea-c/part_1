@@ -28,5 +28,23 @@ Logistic Regression model
       final_score, study_hours_per_week
       a) Spearman > Pearson, indicating monotonic but non-linear relationship
       b) Though it indicates Spearman > Pearson and it has non-linear relationship we will rely on Pearson correlation measure because the difference between              Spearman and Pearson correlation measure is very less and there is a strong correlation between final_score and study_hours_per_week
+   c. Grouped aggregation: Computed and printed the result of aggregation (mean, std, count) for one categorical column (passed) and one numeric column (study_hours_per_week) from the cleaned dataset.
+      a) Passed (Yes) group has the highest mean and standard deviation
+      b) High within‑group standard deviation indicates that the categorical feature alone is insufficient to predict the target precisely because the study
+         hours of students vary. The feature passed carries predictive signal but cannot precisely predict study hours without support from other features.
+      c) The ratio of the highest group mean to the lowest group mean is 2.52 and this ratio is large enough to suggest the categorical feature carries
+         predictive signal.
+10. Save the clean dataset: Saved the clean dataset to a file named cleaned_data.csv
+
+Note:
+1. Python script is saved as part_1.py and placed in the repository
+2. Raw data (Uncleaned data) is saved as studentperformance_data.csv and placed in the repository
+3. Cleaned data is saved as cleaned_data.csv and placed in the repository
+4. Line Plot is saved as line_plot.png and placed in the repository
+5. Bar Chart is saved as bar_chart.png and placed in the repository
+6. Histogram is saved as histogram.png and placed in the repository
+7. Scatter Plot is saved as scatter_plot.png and placed in the repository
+8. Box Plot is saved as box_plot.png and placed in the repository
+9. Correlation heat map is saved as heat_map.png and placed in the repository
    
    
