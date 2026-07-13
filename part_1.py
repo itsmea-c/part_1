@@ -10,7 +10,7 @@ print(df.shape)
 print("Null values: ", df.isnull().sum())
 print("Null value percentage: ", (df.isnull().sum() / df.shape[0]) * 100) # null value percentage
 print("Duplicate Values: ", df.duplicated().sum()) # count of duplicates
-df = df.drop(columns=["parent_education"])
+df = df.drop(columns=["parent_education", "student_id"])
 print(df.shape)
 print("Memory usage before conversion: ", df.memory_usage(deep=True).sum())
 df["extracurricular"] = df["extracurricular"].astype("category")
