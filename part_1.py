@@ -104,4 +104,4 @@ absolute_difference_table = absolute_difference_table.sort_values(by="AbsoluteDi
 print("Three pairs with largest absolute difference in table: ", absolute_difference_table)
 stat = df.groupby("passed")["study_hours_per_week"].agg(['mean', 'std', 'count']) # aggregation
 print("Aggregation: ", stat)
-df.to_csv("C:/Users/saran/Documents/AIML/cleaned_data.csv", index=False) # save clean dataset
+df.to_csv("C:/Users/saran/Documents/AIML/part_1/cleaned_data.csv", index=False) # save clean dataset
